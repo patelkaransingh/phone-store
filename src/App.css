@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
+:root {
+  --mainBlue: #2a2a72;
+  --lightBlue: #009ffd;
+  --mainWhite: #f3f3f3;
+  --mainDark: #1f1f1f;
+  --mainYellow: #ffa400;
+  --mainGreen: #02ad0b;
+  --mutedBlack: #888888;
+  --mainRed: #ff4040;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  /* archivo */
+  font-family: "Montserrat", sans-serif;
+  background: var(--mainWhite) !important;
+  color: var(--mainDark) !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.text-title {
+  /* titillium */
+  font-family: "Open Sans", sans-serif;
+}
+.text-blue {
+  color: var(--mainBlue);
+}
+.text-bright {
+  color: var(--lightBlue);
+}
+.text-faded {
+  color: #353535;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* --------------------- Navbar CSS ------------------------ */
+.navbar-brand {
+  height: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+/* --------------------- Cart CSS ------------------------ */
+.btn-black {
+  background: transparent;
+  font-size: 0.8rem !important;
+  color: var(--mainBlack);
+  border-radius: 0 !important;
+  border: 0.1rem solid var(--mainDark) !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-black:hover {
+  background: var(--mainDark) !important;
+  color: var(--mainWhite) !important;
+}
+
+.cart-icon {
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: var(--mainRed);
+}
+.cart-row {
+  border-bottom: 1px solid #c3c3c3;
 }
